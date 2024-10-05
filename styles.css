@@ -1,7 +1,35 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: peachpuff;
 }
+
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .section {
+    background: #333;
+  }
+  
+
+.section {
+    margin: 50px 0;
+    text-align: center;
+    opacity: 0; /* Start hidden */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: scale(0.9); /* Slightly smaller */
+}
+
+.section.visible {
+    opacity: 1; /* Fade in */
+    transform: scale(1.05); /* Scale up */
+  }
 
 h1, .game-header {
 
