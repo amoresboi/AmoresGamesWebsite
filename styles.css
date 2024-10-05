@@ -4,6 +4,7 @@ body {
 }
 
 h1, .game-header {
+
     background: linear-gradient(to right, #d46d0c, #a266e7);
     -webkit-background-clip: text;
     text-align: center;
@@ -49,3 +50,4 @@ img {
     border: 2px solid #ddd;
     border-radius: 8px; /* Optional: adds rounded corners for a cleaner look */
 }
+
