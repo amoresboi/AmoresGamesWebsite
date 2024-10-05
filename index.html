@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Marco's Favorite Video Games</title>
-    <link rel="icon" type="image/png" href="images/videogame_controller_icon.png"> <!-- Use PNG format for better compatibility -->
+    <link rel="icon" type="image/png" href="images/videogame_controller_icon.png">
 
     <!-- Open Graph meta tags for social sharing -->
     <meta property="og:title" content="AmoresGames">
@@ -15,22 +15,37 @@
     <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-    <h1 id="main-header">Marco's Favorite Video Games</h1>
 
-    <h2 class="game-header" id="cod-header">Call of Duty: Warzone</h2>
-    <div class="image-container">
-        <img id="cod-gif" src="images/warzone.gif" alt="Call of Duty: Warzone">
+    <div>
+        <h1 id="main-header">Marco's Favorite Video Games</h1>
     </div>
+    
 
-    <h2 class="game-header" id="helldivers-header">HellDivers 2</h2>
-    <div class="image-container">
-        <img id="helldivers-gif" src="images/helldivers.gif" alt="HellDivers 2">
-    </div>
+    <section class="parallax" id="warzone-parallax">
+        <div class="game-div">
+            <h2 class="game-header" id="cod-header">Call of Duty: Warzone</h2>
+            <div class="image-container">
+                <img id="cod-gif" src="images/warzone.gif" alt="Call of Duty: Warzone">
+            </div>
+        </div>
+    </section>
+    
+    <section class="parallax" id="helldivers-parallax">
+        <div class="game-div">
+            <h2 class="game-header" id="helldivers-header">HellDivers 2</h2>
+            <div class="image-container">
+                <img id="helldivers-gif" src="images/helldivers.gif" alt="HellDivers 2">
+            </div>
+        </div>
+    </section>
 
-    <h2 class="game-header" id="marvelsnap-header">Marvel SNAP</h2>
-    <div class="image-container">
-        <img id="marvelsnap-img" src="images/marvel_snap_image.jpg" alt="Marvel SNAP">
-    </div>
+    <section class="parallax" id="marvelsnap-parallax">
+        <div class="game-div">
+            <h2 class="game-header" id="marvelsnap-header">Marvel SNAP</h2>
+            <div class="image-container">
+                <img id="marvelsnap-img" src="images/marvel_snap_image.jpg" alt="Marvel SNAP">
+            </div>
+        </div>
+    </section>
 </body>
-
 </html>
