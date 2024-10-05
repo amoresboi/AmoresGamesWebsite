@@ -3,21 +3,49 @@ body {
     background-color: peachpuff;
 }
 
-.gameHeader {
-    color: darkblue
+h1, .game-header {
+    background: linear-gradient(to right, #d46d0c, #a266e7);
+    -webkit-background-clip: text;
+    text-align: center;
+    color: transparent
 }
 
-#codHeader {
+#main-header {
+    margin: 20px 0;
+}
+
+#cod-header {
     font-weight: bold;
-    color: darkgreen;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#helldiversHeader {
+#helldivers-header {
     font-style: italic;
 }
 
-#marvelSnapHeader {
+#marvelsnap-header {
     text-decoration: underline;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.game-div {
+    transition: transform 0.3s ease-in-out;
+}
+
+.game-div:hover {
+    transform: scale(1.05);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+img {
+    max-width: 90%; /* Limits the width of images relative to the container */
+    height: auto; /* Maintains aspect ratio */
+    border: 2px solid #ddd;
+    border-radius: 8px; /* Optional: adds rounded corners for a cleaner look */
 }

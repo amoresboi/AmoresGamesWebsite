@@ -5,17 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Marco's Favorite Video Games</title>
+    <link rel="icon" type="image/png" href="images/videogame_controller_icon.png">
+
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:title" content="AmoresGames">
+    <meta property="og:description" content="A collection of my favorite video games.">
+    <meta property="og:image" content="https://amoresboi.github.io/AmoresGamesWebsite/images/videogame_controller_icon.png">
+    <meta property="og:url" content="https://amoresboi.github.io/AmoresGamesWebsite">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
-    <h1 id="mainHeader">Marco's Favorite Video Games</h1>
+    <div>
+        <h1 id="main-header">Marco's Favorite Video Games</h1>
+    </div>
+    
 
-    <h2 class="gameHeader" id="codHeader">Call of Duty: Warzone</h2>
-    <iframe src="https://giphy.com/embed/8oXwr3q9Ofv5XQUlbg" width="480" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/callofduty-call-of-duty-cod-modern-warfare-3-8oXwr3q9Ofv5XQUlbg">via GIPHY</a></p>
+    <section class="parallax" id="warzone-parallax">
+        <div class="game-div">
+            <h2 class="game-header" id="cod-header">Call of Duty: Warzone</h2>
+            <div class="image-container">
+                <img id="cod-gif" src="images/warzone.gif" alt="Call of Duty: Warzone">
+            </div>
+        </div>
+    </section>
+    
+    <section class="parallax" id="helldivers-parallax">
+        <div class="game-div">
+            <h2 class="game-header" id="helldivers-header">HellDivers 2</h2>
+            <div class="image-container">
+                <img id="helldivers-gif" src="images/helldivers.gif" alt="HellDivers 2">
+            </div>
+        </div>
+    </section>
 
-    <h2 class="gameHeader" id="helldiversHeader">HellDivers 2</h2>
-    <iframe src="https://giphy.com/embed/5Yyp4ZWTuIjCm91mqK" width="480" height="257" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/playstation-helldivers-2-ii-5Yyp4ZWTuIjCm91mqK">via GIPHY</a></p>
-
-    <h2 class="gameHeader" id="marvelSnapHeader">Marvel SNAP</h2>
-    <img src="images/marvel_snap_image.jpg" width=400 height=400>
+    <section class="parallax" id="marvelsnap-parallax">
+        <div class="game-div">
+            <h2 class="game-header" id="marvelsnap-header">Marvel SNAP</h2>
+            <div class="image-container">
+                <img id="marvelsnap-img" src="images/marvel_snap_image.jpg" alt="Marvel SNAP">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
