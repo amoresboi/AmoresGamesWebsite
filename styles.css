@@ -1,7 +1,6 @@
 html {
     scroll-behavior: smooth;
-  }
-  
+}
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -17,7 +16,6 @@ body.dark-mode {
     background: #333;
   }
   
-
 .section {
     margin: 50px 0;
     text-align: center;
@@ -32,11 +30,36 @@ body.dark-mode {
   }
 
 h1, .game-header {
-
     background: linear-gradient(to right, #d46d0c, #a266e7);
     -webkit-background-clip: text;
     text-align: center;
     color: transparent
+}
+
+/* Typing Animation for Header */
+#main-header {
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    animation: typing 1.5s, blink 0.75s step-end infinite;
+    max-width: 100%; /* Prevents overflow on smaller screens */
+}
+  
+@media (max-width: 768px) {
+    #main-header {
+        font-size: 1.5em; /* Reduce font size on mobile */
+        border-right: 0.1em solid orange; /* Adjust border size */
+    }   
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
 }
 
 #main-header {
@@ -78,4 +101,3 @@ img {
     border: 2px solid #ddd;
     border-radius: 8px; /* Optional: adds rounded corners for a cleaner look */
 }
-
